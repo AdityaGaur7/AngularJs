@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { UserListComponent } from "./user-list/user-list.component";
-import { UserDataComponent } from "./user-data/user-data.component";
 import { LoginComponent } from './user-auth/login/login.component';
+import { ChildComponent } from './child/child.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,LoginComponent, UserListComponent,UserDataComponent],
+  imports: [RouterOutlet,LoginComponent,ChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  data = 10
   title = 'angular';
   getdata(){
     return "axa beta"
+  }
+  update(){
+    this.data= Math.floor(100*Math.random());
   }
 }
