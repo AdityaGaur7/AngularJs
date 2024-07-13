@@ -8,11 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  value=""
   getname(name:any,ok:any){
     alert(name);
     alert(ok);
   }
-  getdata(val:any){
-    console.log(val);
+
+  getvalue(val:any){
+  //  alert(this.value);
+   this.value=val;
   }
 }

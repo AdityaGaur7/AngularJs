@@ -1,3 +1,8 @@
 <p>login works!</p>
 <button (click)="getname('ok','hello')">click</button>
-<input type="text" #id (input)="getdata(id.value)"/>
+
+<br><input type="text" #id/>
+<button (click)="getvalue(id.value)">output</button>
+<h3>
+    {{value}}
+</h3>
