@@ -10,7 +10,9 @@ import { ChildComponent } from './child/child.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  data = "name";
   updatedata(item:any){
 alert(item)
+ this.data = item
   }
 }
