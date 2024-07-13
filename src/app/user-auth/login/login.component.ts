@@ -12,4 +12,7 @@ export class LoginComponent {
     alert(name);
     alert(ok);
   }
+  getdata(val:any){
+    console.log(val);
+  }
 }
