@@ -1,8 +1,5 @@
-<div [ngSwitch]="color">
-    <h2 *ngSwitchCase="'red'">red color</h2>
-    <h2 *ngSwitchCase="'green'">green color</h2>
-    <h2 *ngSwitchCase="'blue'">blue color</h2>
-    <h2 *ngSwitchCase="'yellow'">yellow color</h2>
-    <h2 *ngSwitchDefault>No color</h2>
+<h3 *ngFor="let item of users">
+    {{ item }}
+  
 
-</div>
+</h3>

@@ -5,28 +5,27 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
 })
 export class LoginComponent {
   num = 0;
   show = false;
-  value=""
-  color = "iii"
-  getname(name:any,ok:any){
+  value = '';
+  color = 'iii';
+  users = ['anil', 'sunil', 'suresh', 'ramesh', 'rajesh'];
+  getname(name: any, ok: any) {
     alert(name);
     alert(ok);
   }
-  counter(type:any){
-    type=="plus"?this.num++:this.num--;
- 
+  counter(type: any) {
+    type == 'plus' ? this.num++ : this.num--;
   }
-  change(){
-    this.show=!this.show;
+  change() {
+    this.show = !this.show;
   }
- 
 
-  getvalue(val:any){
-  //  alert(this.value);
-   this.value=val;
+  getvalue(val: any) {
+    //  alert(this.value);
+    this.value = val;
   }
 }
