@@ -7,25 +7,21 @@ import { CommonModule } from '@angular/common';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent {
-  num = 0;
-  show = false;
-  value = '';
-  color = 'iii';
-  users = ['anil', 'sunil', 'suresh', 'ramesh', 'rajesh'];
-  getname(name: any, ok: any) {
-    alert(name);
-    alert(ok);
-  }
-  counter(type: any) {
-    type == 'plus' ? this.num++ : this.num--;
-  }
-  change() {
-    this.show = !this.show;
-  }
 
-  getvalue(val: any) {
-    //  alert(this.value);
-    this.value = val;
-  }
+export class LoginComponent {
+  value = "";
+   userdata:any =[];
+   submit(val:any){
+    this.value=val;
+this.userdata.push({id:this.userdata.length,name:this.value})
+
+   }
+   remove(id:any){
+      // this.userdata.splice(id,1)
+      this.userdata = this.userdata.filter((item:any) => item.id !== id);
+
+
+   }
+  
 }
+
