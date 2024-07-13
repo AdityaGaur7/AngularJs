@@ -8,11 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  num = 0;
   value=""
   getname(name:any,ok:any){
     alert(name);
     alert(ok);
   }
+  counter(type:any){
+    type=="plus"?this.num++:this.num--;
+ 
+  }
+ 
 
   getvalue(val:any){
   //  alert(this.value);
