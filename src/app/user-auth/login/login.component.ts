@@ -11,7 +11,7 @@ export class LoginComponent {
   num = 0;
   show = false;
   value=""
-  color = "green"
+  color = "iii"
   getname(name:any,ok:any){
     alert(name);
     alert(ok);

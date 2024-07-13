@@ -1,22 +1,8 @@
-<h1 *ngIf="show;then ifblock else elseblock">
+<div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'">red color</h2>
+    <h2 *ngSwitchCase="'green'">green color</h2>
+    <h2 *ngSwitchCase="'blue'">blue color</h2>
+    <h2 *ngSwitchCase="'yellow'">yellow color</h2>
+    <h2 *ngSwitchDefault>No color</h2>
 
-</h1>
-
-<ng-template #ifblock>
- <h1>If vala</h1>
-</ng-template>
-
-<ng-template #elseblock>
-    <h1>else vala</h1>
-   </ng-template>
-
-   <button (click)="change()">magic</button>
-
-   <ng-template [ngIf]="color==='red'">
-    <h1>red color</h1>
-   </ng-template>
-   
-   <ng-template [ngIf]="color==='green'">
-    <h1>red green</h1>
-   </ng-template>
-   
+</div>
