@@ -11,6 +11,10 @@ import { FormsModule } from '@angular/forms';
 
 export class LoginComponent {
 name:any;
+getdata(item:any){
+console.log(item);
+
+}
   
 }
 
