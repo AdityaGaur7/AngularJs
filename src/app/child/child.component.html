@@ -1,2 +1,3 @@
 <p>child works!</p>
-{{value}}
+<input type="text" #box/>
+<button (click)="updatedataevent.emit(box.value)">update</button>

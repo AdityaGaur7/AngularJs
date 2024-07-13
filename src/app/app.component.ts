@@ -10,12 +10,7 @@ import { ChildComponent } from './child/child.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  data = 10
-  title = 'angular';
-  getdata(){
-    return "axa beta"
-  }
-  update(){
-    this.data= Math.floor(100*Math.random());
+  updatedata(item:any){
+alert(item)
   }
 }
