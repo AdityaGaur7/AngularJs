@@ -1,7 +1,3 @@
 
-<input type="text" #id/>
-<button (click)="submit(id.value)">ok</button>
-
-<h2 *ngFor="let i of userdata">
-    {{i.name}}  <button (click)="remove(i.id)">del</button>
-</h2>
+<input type="text" [(ngModel)]="name"/>
+<h3>{{name}}</h3>
