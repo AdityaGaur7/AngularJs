@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
   num = 0;
+  show = false;
   value=""
   getname(name:any,ok:any){
     alert(name);
@@ -17,6 +18,9 @@ export class LoginComponent {
   counter(type:any){
     type=="plus"?this.num++:this.num--;
  
+  }
+  change(){
+    this.show=!this.show;
   }
  
 

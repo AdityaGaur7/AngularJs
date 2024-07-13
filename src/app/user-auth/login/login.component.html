@@ -1,1 +1,13 @@
-<input type="text" [disabled]=[false] value="ok"/>
+<h1 *ngIf="show;then ifblock else elseblock">
+
+</h1>
+
+<ng-template #ifblock>
+ <h1>If vala</h1>
+</ng-template>
+
+<ng-template #elseblock>
+    <h1>else vala</h1>
+   </ng-template>
+
+   <button (click)="change()">magic</button>
