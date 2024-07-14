@@ -1,10 +1,10 @@
 import { Component,OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { ActivatedRoute ,RouterLink} from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [RouterLink,RouterOutlet],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
