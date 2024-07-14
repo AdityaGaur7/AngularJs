@@ -1,2 +1,6 @@
+<form #login="ngForm" (ngSubmit)="userlogin(login.value)">
+    <input type="text" name="name" ngModel>
+    <input type="text" name="password" ngModel>
+    <button type="submit">Login</button>
 
-{{20 | usdinr:72}}
+</form>

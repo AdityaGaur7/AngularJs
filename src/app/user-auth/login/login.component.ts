@@ -11,11 +11,13 @@ import { UsdinrPipe } from '../../pipes/usdinr.pipe';
 })
 
 export class LoginComponent {
-name:any;
-getdata(item:any){
-console.log(item);
-this.name=item
-}
+
+
+  userlogin(item:any){
+    console.log(item);
+    
+  }
+
   
 }
 
