@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule,FormControl,FormGroup } from '@angular/forms';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,FormControl,FormGroup
   ]
 })
 export class UserAuthModule {}

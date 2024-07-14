@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule ,FormControl,FormGroup} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -10,17 +10,8 @@ import { FormsModule ,FormControl,FormGroup} from '@angular/forms';
 })
 
 export class LoginComponent {
+name="aditya"
 
-
-  loginform = new FormGroup({
-    user:new FormControl(''),
-    password:new FormControl('')
-  })
-
-   loginuser(){
-    console.log(this.loginform.value);
-    
-   }
   
 }
 
